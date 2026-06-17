@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="App.core/App.core.csproj" />
+  <Project Path="FeeCollectionApp/FeeCollectionApp.csproj" />
+</Solution>

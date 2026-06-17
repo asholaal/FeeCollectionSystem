@@ -154,3 +154,70 @@ The project is structured into core services and Windows Forms UI views.
 - **App.WindowsApp**: User Interface (Windows Forms)
 
 ### Solution Structure
+FeeCollectionSystem/
+├── App.Core (Class Library)
+│ ├── Models/
+│ │ ├── Student.cs
+│ │ ├── FeeStructure.cs
+│ │ ├── StudentAccount.cs
+│ │ └── FeeTransaction.cs
+│ ├── Contracts/
+│ │ ├── IStudentService.cs
+│ │ ├── IFeeStructureService.cs
+│ │ ├── IStudentAccountService.cs
+│ │ └── IFeeTransactionService.cs
+│ └── Services/
+│ ├── DbStudentService.cs
+│ ├── DbFeeStructureService.cs
+│ ├── DbStudentAccountService.cs
+│ └── DbFeeTransactionService.cs
+│
+└── FeeCollectionApp (Windows Forms)
+├── Forms/
+│ ├── MainForm.cs
+│ ├── StudentForm.cs
+│ ├── FeeForm.cs
+│ └── PaymentForm.cs
+├── Views/
+│ ├── StudentView.cs
+│ ├── FeeView.cs
+│ ├── PaymentView.cs
+│ └── DashboardView.cs
+└── App.config
+
+Third-Party Packages / Dependencies
+App.Core
+Microsoft.Data.SqlClient 7.0.1 — SQL Server client access for ADO.NET
+
+FeeCollectionApp
+LiveChartsCore.SkiaSharpView.WinForms 2.0.4 — WinForms chart controls for dashboard
+
+Microsoft.Data.SqlClient 7.0.1 — SQL Server client access
+
+System.Configuration.ConfigurationManager 10.0.8 — Reading App.config settings
+
+
+🚀 How to Run
+Clone the repository:
+
+bash
+git clone https://github.com/asholaal/FeeCollectionSystem.git
+Open FeeCollectionSystem.sln in Visual Studio
+
+Update the connection string in FeeCollectionApp/App.config
+
+Run the SQL script to create the database and tables
+
+Build the solution (Ctrl + Shift + B)
+
+Run the project (F5)
+
+👥 Group Members
+Member 1: Ayesha Sadiqa(02044)
+
+Member 2: Shamsa Kanwal(02040)
+
+Member 3:Aliza Fatima(02052)
+
+📅 Semester
+Spring 2026 | Advanced Programming
